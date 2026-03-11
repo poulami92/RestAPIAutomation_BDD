@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
         //tags= "@AddGetDeletePlace",
 		plugin={
 				"json:target/jsonReports/cucumber-report.json",
-				"html:target/htmlReports/cucumber-report.html"
+				"html:target/htmlReports/index.html"
 		}
 )
 public class TestRunner {
