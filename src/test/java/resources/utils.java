@@ -36,7 +36,8 @@ public class utils {
 	public static String getGlobalValue(String key) throws IOException
 	{
 		Properties prop = new Properties();
-		FileInputStream fs = new FileInputStream("C:\\Users\\MSUSERSL123\\eclipse-workspace\\APIFramwork\\src\\test\\java\\resources\\global.properties");
+		FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\global.properties");
+		//FileInputStream fs = new FileInputStream("C:\\Users\\MSUSERSL123\\eclipse-workspace\\APIFramwork\\src\\test\\java\\resources\\global.properties");
 		prop.load(fs);
 		return prop.getProperty(key);
 		
